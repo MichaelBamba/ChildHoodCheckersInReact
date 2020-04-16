@@ -243,6 +243,7 @@ class Game extends React.Component {
 
     return (
       <div>
+        <h1 className="Title"> Checkers was not so Simple </h1>
         <div className="center">
           {board.map((row, i) => (
             <div className="board-row" key={i}>

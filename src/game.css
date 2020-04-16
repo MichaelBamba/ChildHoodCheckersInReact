@@ -88,9 +88,13 @@ button:focus {
   overflow: auto;
   margin: 0 auto;
   width: 560px;
-  border: 20px solid black;
+  border: 5px dashed red;
+  outline: 15px solid black;
 }
 
+.Title {
+  text-align: center;
+}
 .btn1 {
   background-color: rgb(112, 56, 0);
   border: none;
