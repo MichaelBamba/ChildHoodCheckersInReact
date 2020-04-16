@@ -1,5 +1,6 @@
 html {
   flex-flow: inherit;
+  background-color: navy;
 }
 button:focus {
   outline: 0;
@@ -94,28 +95,10 @@ button:focus {
 
 .Title {
   text-align: center;
-}
-.btn1 {
-  background-color: rgb(112, 56, 0);
-  border: none;
   color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px auto;
-  margin-left: 38%;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.btn1:hover {
-  background-color: #e7e7e7;
-  color: rgb(112, 56, 0);
 }
 
 .status {
-  margin-left: 2%;
-  display: inline-block;
+  text-align: center;
+  color: white;
 }

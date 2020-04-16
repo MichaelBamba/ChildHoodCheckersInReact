@@ -239,11 +239,14 @@ class Game extends React.Component {
     const { board, isWinner, currentPlayer } = this.state;
     let status = null;
     if (isWinner) status = isWinner + " is the winner !!!";
-    else status = currentPlayer ? "red is your turn" : "black is your turn";
+    else status = currentPlayer ? "Player 1's turn" : "Player 2's turn";
 
     return (
       <div>
-        <h1 className="Title"> Checkers was not so Simple </h1>
+        <h1 className="Title"> Checkers </h1>
+        <div className={"status"}>
+          <h2>status: {status} </h2>
+        </div>
         <div className="center">
           {board.map((row, i) => (
             <div className="board-row" key={i}>
@@ -256,10 +259,6 @@ class Game extends React.Component {
               ))}
             </div>
           ))}
-        </div>
-
-        <div className={"status"}>
-          <h2>status: {status} </h2>
         </div>
       </div>
     );
