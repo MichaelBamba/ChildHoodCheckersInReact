@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./game.css";
 import Board from "./components/board";
 import * as Aid from "./components/HelperFunctions";
 
@@ -131,7 +131,6 @@ class Game extends React.Component {
     if (currentPlayer) playerDirection.push(-1);
     else playerDirection.push(1);
 
-    //if the selected piece is a king , we also check both directions forward and backward.
     if (isKing) playerDirection.push(playerDirection[0] * -1);
 
     for (let i = 0; i < playerDirection.length; ++i) {
@@ -240,7 +239,7 @@ class Game extends React.Component {
     const { board, isWinner, currentPlayer } = this.state;
     let status = null;
     if (isWinner) status = isWinner + " is the winner !!!";
-    else status = currentPlayer ? "white is your turn" : "black is your turn";
+    else status = currentPlayer ? "red is your turn" : "black is your turn";
 
     return (
       <div>

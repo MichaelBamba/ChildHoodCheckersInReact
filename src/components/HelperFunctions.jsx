@@ -10,18 +10,18 @@ export const initBoard = [
 ];
 
 export function evaluateWinner(board) {
-  let whitePlayer = 0;
+  let redPlayer = 0;
   let blackPlayer = 0;
   for (let i = 0; i < board.length; ++i) {
     for (let j = 0; j < board.length; ++j) {
       const squareValue = board[i][j];
-      if (squareValue === "W" || squareValue === "WK") whitePlayer++;
+      if (squareValue === "W" || squareValue === "WK") redPlayer++;
       if (squareValue === "B" || squareValue === "BK") blackPlayer++;
     }
   }
 
-  if (whitePlayer === 0) return "black";
-  if (blackPlayer === 0) return "white";
+  if (redPlayer === 0) return "black";
+  if (blackPlayer === 0) return "red";
   return false;
 }
 

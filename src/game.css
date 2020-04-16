@@ -1,0 +1,117 @@
+html {
+  flex-flow: inherit;
+}
+button:focus {
+  outline: 0;
+}
+
+.square {
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  border: 0px solid #ddd;
+  float: left;
+}
+
+.checker-w {
+  background-color: red;
+}
+
+.checker-g {
+  background-color: black;
+}
+
+.player-W {
+  width: 55px;
+  height: 55px;
+  margin-left: 4px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url("img/red.png");
+  background-size: 55px 55px;
+}
+
+.player-WK {
+  width: 55px;
+  height: 55px;
+  margin-left: 4px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url("img/redKing.png");
+  background-size: 55px 55px;
+}
+
+.player-BK {
+  width: 55px;
+  height: 55px;
+  margin-left: 4px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url("img/blackKings.png");
+  background-size: 55px 55px;
+}
+
+.player-B {
+  width: 55px;
+  height: 55px;
+  margin-left: 4px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url("img/black.png");
+  background-size: 55px 55px;
+}
+
+.player-H {
+  width: 55px;
+  height: 55px;
+  margin-left: -2px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  background: linear-gradient(0deg, rgb(255, 213, 0) 30%, rgb(255, 213, 0) 70%);
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 173, 51, 0.91);
+  -moz-box-shadow: 0px 0px 30px rgba(255, 173, 51, 0.91);
+  box-shadow: 0px 0px 30px rgba(255, 173, 51, 0.91);
+}
+
+.center {
+  overflow: auto;
+  margin: 0 auto;
+  width: 560px;
+  border: 20px solid black;
+}
+
+.btn1 {
+  background-color: rgb(112, 56, 0);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto;
+  margin-left: 38%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #e7e7e7;
+  color: rgb(112, 56, 0);
+}
+
+.status {
+  margin-left: 2%;
+  display: inline-block;
+}
