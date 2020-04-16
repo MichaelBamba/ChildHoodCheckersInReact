@@ -3,10 +3,10 @@ import "../index.css";
 
 export default function Board({ symbol, onClick }) {
   if (
-    symbol === "W" ||
+    symbol === "R" ||
     symbol === "B" ||
     symbol === "H" ||
-    symbol === "WK" ||
+    symbol === "RK" ||
     symbol === "BK"
   ) {
     return (

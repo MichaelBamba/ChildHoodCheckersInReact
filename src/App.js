@@ -35,15 +35,15 @@ class Game extends React.Component {
 
     if (
       clickedSquare === "-" ||
-      (clickedSquare.charAt(0) !== (currentPlayer ? "W" : "B") &&
+      (clickedSquare.charAt(0) !== (currentPlayer ? "R" : "B") &&
         clickedSquare !== "O")
     )
       return;
 
     if (
       firstClick === false ||
-      clickedSquare === (currentPlayer ? "W" : "B") ||
-      clickedSquare === (currentPlayer ? "WK" : "BK")
+      clickedSquare === (currentPlayer ? "R" : "B") ||
+      clickedSquare === (currentPlayer ? "RK" : "BK")
     ) {
       squareCoords[0] = rowIndex;
       squareCoords[1] = colIndex;

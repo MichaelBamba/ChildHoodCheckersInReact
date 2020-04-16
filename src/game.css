@@ -21,7 +21,7 @@ button:focus {
   background-color: black;
 }
 
-.player-W {
+.player-R {
   width: 55px;
   height: 55px;
   margin-left: 4px;
@@ -33,7 +33,7 @@ button:focus {
   background-size: 55px 55px;
 }
 
-.player-WK {
+.player-RK {
   width: 55px;
   height: 55px;
   margin-left: 4px;

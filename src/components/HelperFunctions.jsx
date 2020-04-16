@@ -4,9 +4,9 @@ export const initBoard = [
   ["B", "null", "B", "null", "B", "null", "B", "null"],
   ["null", "-", "null", "-", "null", "-", "null", "-"],
   ["-", "null", "-", "null", "-", "null", "-", "null"],
-  ["null", "W", "null", "W", "null", "W", "null", "W"],
-  ["W", "null", "W", "null", "W", "null", "W", "null"],
-  ["null", "W", "null", "W", "null", "W", "null", "W"],
+  ["null", "R", "null", "R", "null", "R", "null", "R"],
+  ["R", "null", "R", "null", "R", "null", "R", "null"],
+  ["null", "R", "null", "R", "null", "R", "null", "R"],
 ];
 
 export function evaluateWinner(board) {
@@ -15,7 +15,7 @@ export function evaluateWinner(board) {
   for (let i = 0; i < board.length; ++i) {
     for (let j = 0; j < board.length; ++j) {
       const squareValue = board[i][j];
-      if (squareValue === "W" || squareValue === "WK") redPlayer++;
+      if (squareValue === "R" || squareValue === "RK") redPlayer++;
       if (squareValue === "B" || squareValue === "BK") blackPlayer++;
     }
   }
@@ -27,7 +27,7 @@ export function evaluateWinner(board) {
 
 export function isKing(rowIndex, clickedSquare, currentPlayer) {
   if (clickedSquare.length > 1) return false;
-  if (currentPlayer) return rowIndex === 0 ? "WK" : false;
+  if (currentPlayer) return rowIndex === 0 ? "RK" : false;
   else return rowIndex === 7 ? "BK" : false;
 }
 
