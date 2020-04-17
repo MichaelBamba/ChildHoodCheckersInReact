@@ -182,7 +182,7 @@ class Game extends React.Component {
         col = colIndex + leftRight[j];
         if (Aid.checkBounds(row, col)) continue;
         squareValue = board[row][col];
-        if ((currentPlayer ? "B" : "W") === squareValue.charAt(0)) {
+        if ((currentPlayer ? "B" : "R") === squareValue.charAt(0)) {
           rowJump = rowIndex + 2 * playerDirection[i];
           colJump = colIndex + 2 * leftRight[j];
           if (Aid.checkBounds(rowJump, colJump)) continue;
